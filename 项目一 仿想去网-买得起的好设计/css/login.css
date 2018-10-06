@@ -1,0 +1,393 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+body{
+	min-width: 980px;
+	color: #000;
+	font-family: tahoma,verdana,"微软雅黑";
+	background: url(../img/brickwall.png);
+}
+
+/****************登录页面****************/
+
+/*清除浮动*/
+.clearFloat{
+	zoom: 1;
+}
+.clearFloat::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/****************头部****************/
+/*头部*/
+.header{
+	width: 100%;
+	}
+/*头部导航*/
+.headNav{
+	width: 980px;
+	height: 98px;
+	margin: 0 auto;
+	}
+/*网站logo*/
+.logo{
+	display: inline-block;
+	float: left;
+	width: 330px;
+	height: 100%;
+	}
+h1{	
+	float: left;
+	width: 329px;
+	height: 100%;
+	text-align: center;
+	}
+.imgURL{
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
+	text-decoration: none;
+	}
+.imgURL img{
+	margin-top: 37px;
+	border: none;
+	width: 229px;
+	height: 24px;
+	}
+/*鼠标移入图片*/
+.imgURL img:hover{
+	opacity: 0.9;
+	}
+
+/****************正文****************/
+.secLogin{
+	width:980px;
+	margin: 12px auto 100px; 
+}
+/*正文左侧-图片*/
+.secLogin .loginLeft{
+	float: left;
+	width: 546px;
+	height: 450px;
+	overflow: hidden;
+}
+.secLogin .loginLeft a{
+	text-decoration: none;
+	cursor: pointer;
+}
+.secLogin .loginLeft a img{
+	max-width: 546px;
+	max-height: 450px;
+	border: none;
+}
+/*正文右侧-登录窗*/
+.secLogin .loginRight{
+	float: right;
+	width: 392px;
+	height: 448px;
+	overflow: hidden;
+	border: 1px solid #d8d8d8;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+.secLogin .loginRight .loginBox{
+	padding: 25px 22px 21px;
+}
+/*登录窗主要内容*/
+.loginRight .loginBox .loginTitle{
+	/*width: 348px;*/
+	padding: 1px 0 22px;
+}
+.loginRight .loginBox .loginTitle h2{
+	/*width: 348px;*/
+	color: #000000;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.loginRight .loginBox .loginLine{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin-bottom: 17px;
+	background: url(../img/faster_line.jpg) no-repeat;
+	background-position: center center; 	
+}
+
+.loginRight .loginBox .loginLine span{
+	width: 96px;
+	font-size: 12px;
+	color: #d3d3d3;
+	text-align: center;
+}
+
+/*登录信息*/
+.loginRight .loginBox .loginInfo{
+	position: relative;
+	padding: 0 0 26px;
+}
+.loginRight .loginBox .loginInfo .loginAccount{
+	width: 348px;
+	height: 49px;
+	line-height: 49px;
+	font-size: 16px;
+	margin: 0 auto 10px;
+	padding-left:35px ;
+	border: 1px solid silver;
+	border-radius: 4px;
+	outline: none;
+	background: url(../img/loginUser.png) no-repeat;
+	background-size: 16px 16px;
+	background-position: 10px;
+	box-sizing: border-box;
+}
+.loginRight .loginBox .loginInfo .loginPass{
+	width: 348px;
+	height: 49px;
+	line-height: 49px;
+	font-size: 16px;
+	margin: 0 auto 32px;
+	padding-left: 35px;
+	border: 1px solid silver;
+	border-radius: 4px;
+	outline: none;
+	background: url(../img/password.png) no-repeat;
+	background-size: 16px 16px;
+	background-position: 10px;
+	box-sizing: border-box;
+}
+.loginRight .loginBox .loginInfo .forgetPass{
+	position: absolute;
+	right: 16px;
+	bottom: 89px;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.loginRight .loginBox .loginInfo .forgetPass:hover{
+	text-decoration: underline;
+}
+.forgetTo{
+	position: absolute;
+	right: -3px;
+	bottom: 87px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/more.png) no-repeat;
+	background-size: 22px 22px;
+	background-position: -3px;
+}
+.loginRight .loginBox .loginInfo .btnLogin{
+	width: 348px;
+	height: 49px;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 49px;
+	margin: 0 auto 10px;
+	border-radius: 4px;
+	background-color: #343434;
+	border: none;
+	outline: none;
+}
+.loginRight .loginBox .loginInfo .btnLogin:hover{
+	background-color: #000000;
+}
+
+.loginRight .loginBox .loginWay{
+	height: 20px;
+	line-height: 20px;
+	margin-top: -12px;	
+}
+/*第三方登录*/
+.loginRight .loginBox .loginMore ul{
+	list-style: none;
+	padding-left: 103px;
+}
+.loginRight .loginBox .loginMore ul li{
+	float: left;
+	margin:0 16px 0 0;
+}
+.loginRight .loginBox .loginMore ul li a{
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	color: #A7A9AC;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+.loginRight .loginBox .loginMore ul li a i{
+	display: block;
+	width: 36px;
+	height: 36px;
+}
+.loginRight .loginBox .loginMore ul .weixing a i{
+	background: url(../img/three_logo.gif) no-repeat;
+	background-position: 0 0;
+}
+.loginRight .loginBox .loginMore ul .weibo a i{
+	background: url(../img/three_logo.gif) no-repeat;
+	background-position: -52px 0;
+}
+.loginRight .loginBox .loginMore ul .qq a i{
+	background: url(../img/three_logo.gif) no-repeat;
+	background-position: -105px 0;
+}
+/*登录验证*/
+.loginInfo  .validTip{
+	position: absolute;
+	display: none;
+	height: 30px;
+	line-height: 26px;
+	left: 0;
+	bottom: 70px;
+	font-size: 14px;
+	padding-bottom: 12px;
+	color: #ff4a4a;
+}
+
+
+/*立即注册*/
+.loginRight .loginBox .loginResiter{
+	padding:19px 0 0 0;
+	font-size: 14px;
+	color: #c3c3c3;
+	text-align: center;
+}
+.loginRight .loginBox .loginResiter>span{
+	color: #c3c3c3;
+}
+.resisterNow{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(../img/more.png) no-repeat;
+	background-size: 22px 22px;
+	background-position: -3px;
+}
+.loginRight .loginBox .loginResiter a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #000000;
+}
+.loginRight .loginBox .loginResiter a:hover{
+	text-decoration: underline;
+}
+
+
+/****************注册页面****************/
+.secRegister{
+	width:980px;
+	margin: 0 auto 100px; 
+	background-color: #FFFFFF;
+	border: 1px solid #dbdbdb;
+}
+.registerBody{
+	width: 980px;
+}
+.registerBody .registerBox{
+	width: 350px;
+	margin: 0 auto;
+	text-align: left;
+}
+.registerBody .registerBox .registerTitle h2{
+	padding-top: 25px;
+	padding-bottom: 24px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+}
+.registerBody .registerBox .registerInfo{
+	position: relative;
+	padding-top:5px;
+	padding-bottom: 36px;
+}
+.registerBody .registerBox .registerInfo input{
+	width: 350px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 14px;
+	border-radius: 4px;
+	outline: none;
+}
+.registerBody .registerBox .registerInfo .registerAccount{
+	margin: 0 auto 10px;
+	padding-left:36px ;
+	border: 1px solid silver;
+	background: url(../img/loginUser.png) no-repeat;
+	background-size: 16px 16px;
+	background-position: 10px;
+	box-sizing: border-box;
+}
+.registerBody .registerBox .registerInfo .registerPass{
+	margin: 0 auto;
+	padding-left: 36px;
+	border: 1px solid silver;
+	background: url(../img/password.png) no-repeat;
+	background-size: 16px 16px;
+	background-position: 10px;
+	box-sizing: border-box;
+}
+.registerBody .registerBox .registerInfo .btnRegister{
+	font-size: 12px;
+	color: #FFFFFF;
+	margin: 0 auto 2px;
+	background-color: #343434;
+	border: none;
+}
+.registerBody .registerBox .registerInfo .btnRegister:hover{
+	background-color: #000000;
+}
+.registerBody .registerBox .registerInfo .passTip{
+	padding-top: 5px;
+	font-size: 14px;
+	color: #d3d3d3;
+	margin: 0 auto 32px;
+}
+/*注册验证*/
+.registerBody .registerBox .registerInfo  .validTip{
+	position: absolute;
+	display: none;
+	height: 30px;
+	line-height: 26px;
+	left: 0;
+	bottom: 150px;
+	font-size: 14px;
+	padding-bottom: 12px;
+	color: #ff4a4a;
+}
+
+.registerBody .registerBox .registerInfo  .agreement{
+	padding: 5px 0 30px;
+	font-size: 14px;
+	color: #707070;
+}
+.registerBody .registerBox .registerInfo  .agreement a{
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+}
+.registerBody .registerBox .registerInfo  .agreement a:hover{
+	text-decoration: underline;
+}
+.registerBody .registerBox .registerInfo .gotoLogin{
+	text-align: center;
+	font-size: 12px;
+}
+.registerBody .registerBox .registerInfo .gotoLogin a{
+	padding-right: 12px;
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+	background: url(../img/gotoLogin.png) no-repeat;
+	background-size: 12px 12px;
+	background-position: 25px 2px;
+}
+.registerBody .registerBox .registerInfo .gotoLogin a:hover{
+	text-decoration: underline;
+}
