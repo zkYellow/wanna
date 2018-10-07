@@ -1,0 +1,439 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+body{
+	min-width: 980px;
+	color: #000;
+	font-family: tahoma,verdana,"微软雅黑";
+}
+/*清除浮动*/
+.clearboth{
+	zoom: 1;
+}
+.clearboth::after{
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}*/
+/*头部*/
+.header{
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	background-color: #F7F7F7;
+}
+.header .headNav{
+	position: relative;
+	background: none;
+	border-bottom: none;
+	background-color: #FFFFFF;
+	font-weight: normal;
+	margin: 0 auto;
+}
+.header .headNav .barOne{
+	width: 980px;
+	height: 55px;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+}
+.header .headNav .barOne h1{
+	float: left;
+	margin:13px 0 0 25px;
+	text-align: left;
+	font-weight: normal;
+	font-size: 100%;	
+	}
+.header .headNav .barOne h1 .imgURL{
+	display: inline;
+	text-decoration: none;
+	cursor: pointer;
+	color: #000000;
+	margin: 0;
+}
+.header .headNav .barOne h1 .imgURL img{
+	width: 300px;
+	vertical-align: top;
+	border: none;
+	opacity: 1;
+}
+/*登录注册*/
+.userInfo {
+	float: right;
+}
+.userInfo .loginEnter .logReg{
+	list-style: none;
+}
+.userInfo .loginEnter .logReg li{
+	float: left;
+	height: 52px;
+}
+.userInfo .loginEnter .logReg li a{
+	float: left;
+	height: 50px;
+	line-height: 51px;
+	color: #000000;
+	font-size: 16px !important;
+	text-indent: 2em;
+	text-decoration: none;
+	cursor: pointer;
+}
+.userInfo .loginEnter .logReg li a:hover{
+	text-decoration: underline;
+}
+.userInfo .loginEnter .logReg .goReg a{
+	background: url(../img/register.png) no-repeat;
+	background-position: 10px 15px;
+	margin-right: 39px;
+}
+.userInfo .loginEnter .logReg .goLog a{
+	background: url(../img/login.png) no-repeat;
+	background-position:10px 15px ;
+	margin-right: 110px;
+}
+/*第二层头部*/
+.barTwo{
+	height: 35px;
+	padding: 0;
+	color: #FFFFFF;
+	background-color: rgb(56,56,56);
+}
+.barTwo .contentBar{
+	width: 980px;
+	margin: 0 auto;
+}
+.contentBar .navBar{
+	display: inline-block;
+	margin-left: 6px;
+}
+.contentBar .navBar .navBarContent{
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+.contentBar .navBar .navBarContent .navList{
+	float: left;
+	display: inline;
+	list-style: none;
+}
+.contentBar .navBar .navBarContent .navList li{
+	display: inline;
+	float: left;
+	position: relative;
+	margin-right: 45px;
+}
+.contentBar .navBar .navBarContent .navList li a{
+	float: left;
+	position: relative;
+	margin: 0 2px;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 7px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.contentBar .navBar .navBarContent .navList li a span{
+	width: 72px;
+	padding-left: 5px;
+}
+/*当前选中*/
+.contentBar .navBar .navBarContent .navList li .currentStat span{
+	border-left: 4px solid #FFFFFF;
+}
+
+.contentBar .searchBar{
+	position: relative;
+	float: right;
+	padding: 0 0 0 36px !important;
+	text-align: center;
+	
+}
+.contentBar .searchBar .searchBox{
+	width: 249px;
+	height: 33px;
+	background: url(../img/arrow.png) no-repeat;
+	background-position: 2px 6px;
+}
+.contentBar .searchBar .searchBox input{
+	vertical-align: middle;
+	font-family: arial,tahoma,verdana;
+	font-size: 12px;
+}
+.contentBar .searchBar .searchBox .inputText{
+	width: 155px;
+	height: 20px;
+	margin-top: 6px;
+	margin-left: 10px;
+	line-height: 17px;
+	border: none 0;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: rgb(56,56,56);
+	outline: none;
+}
+.contentBar .searchBar .searchBox .btnSearch{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	left: -195px;
+	top: 1px;
+	background: url(../img/search2.png) no-repeat;
+	background-size: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+/*正文板块*/
+section .appOne{
+	position: relative;
+	width: 100%;
+	height: 757px;
+	background: url(../img/app_main_bg.png) no-repeat center 90px;
+	
+}
+section .appOne .appLogo{
+	position: absolute;
+	left: 50%;
+	margin-left: 230px;
+	top: 185px;
+}
+section .appOne .appLogo  a{
+	display: block;
+	width: 140px;
+	height: 40px;
+	color: #000000;
+	margin: 10px 0 10px 6px;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+section .appTwo{
+	position: relative;
+	width: 100%;
+	height: 715px;
+	border-top: 10px solid #000000;
+	margin-top: 10px;
+	background: url(../img/appBottom.png) bottom center;
+}
+section .appTwo div{
+	position: absolute;
+	left: 50%;
+	line-height: 30px;
+	font-size: 18px;
+	color: #3E3A39;
+	background-color: rgb(255,255,255,0.6);
+	padding: 6px 18px;
+}
+section .appTwo .desOne{
+	margin-left: -382px;
+	top: 95px;
+}
+section .appTwo .desTwo{
+	margin-left: -89px;
+	top: 160px;
+}
+section .appTwo .desThree{
+	margin-left: -349px;
+	top: 280px;
+}
+section .appTwo .desFour{
+	margin-left: -160px;
+	top: 430px;
+}
+
+/*底部*/
+.footer{
+	width: 100%;
+	position: relative;
+	height: 241px;
+	background-color: #000000;
+	color: #727272;
+	text-align: center;
+	}
+.footer .footerWrap{
+	width: 960px;
+	height: 28px;
+	margin:0 auto;
+}
+/*底部logo*/
+.footer .footerWrap .footerLogo{
+	float: right;
+	width: 205px;
+	height: 225px;
+	overflow: hidden;
+	background: url(../img/xq_bottom_img.png) no-repeat;
+}
+.footer .footerWrap .footerLogo a{
+	display: block;
+	width: 100%;
+	height: 200px;
+	padding: 0 5px 0 0;
+	text-decoration: none;
+	cursor: pointer;
+	color: #484848;
+}
+/*名言*/
+.footer .footerWrap .saying{
+	height: 90px;
+	padding: 25px 0 0;
+	margin-right: 285px;
+	margin-bottom: 35px;
+}
+.footer .footerWrap .saying .words{
+	font-size: 18px;
+	text-align: left;
+	color: #FFFFFF;
+}
+.footer .footerWrap .saying .author{
+	padding:25px 0 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: right;
+}
+.footer .footerWrap .saying .author em{
+	padding-left: 10px;
+	font-style: normal;
+}
+/*copyright*/
+.footer .footerWrap .copyright{
+	position: relative;
+	top: -70px;
+	padding: 5px 0 0;
+	text-align: left;
+	margin-top: 102px;
+}
+.footer .footerWrap .copyright .wayLink{
+	position: relative;
+	width: 597px;
+	height: 54px;
+}
+.footer .footerWrap .copyright .wayLink a{
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 0 15px 0 0;
+	color: #808285;
+	text-decoration: none;
+	cursor: pointer;
+}
+.footer .footerWrap .copyright .wayLink a i{
+	height: 18px;
+	padding: 0 0 0 22px;
+	vertical-align: bottom;
+	zoom: 1;
+}
+.footer .footerWrap .copyright .wayLink a .weiboLink{
+	display: inline-block;
+	background: url(../img/ico_common.png) no-repeat;
+	background-position: -224px -5944px;
+	padding-left: 26px;
+}
+.footer .footerWrap .copyright .wayLink a .doubanLink{
+	display: inline-block;
+	background: url(../img/ico_common.png) no-repeat;
+	background-position: -224px -5976px;
+}
+.footer .footerWrap .copyright .wayLink a .renrenLink{
+	display: inline-block;
+	background: url(../img/ico_common.png) no-repeat;
+	background-position: -224px -6016px ;
+	padding-left: 36px;
+}
+.footer .footerWrap .copyright .wayLink a span{
+	font-size:12px ;		
+}
+.footer .footerWrap .copyright span:nth-of-type(2){
+	position: absolute;
+	font-size: 12px;
+	top: 8px;
+	left: 288px;
+}
+.footer .footerWrap .copyright .footerHot{
+	position: absolute;
+	font-size: 12px;
+	top: 8px;
+	right: 245px;
+}
+.footer .footerWrap .copyright .footerHot a{
+	text-decoration: none;
+	color: #808285;
+	cursor: pointer;
+}
+.footer .footerWrap .copyright .footerHot a:nth-of-type(2){
+	padding-left: 10px;
+}
+/*友情链接*/
+.footer .footerWrap .friendLink{
+	padding: 5px 0 0;
+	margin: -40px 285px 0 0;
+	margin-right: 240px;
+	border-top:1px solid #58595c ;
+	text-align: left;
+}
+.footer .footerWrap .friendLink h3{
+	display: inline;
+	font-weight: 400;
+	font-size: 12px;
+	cursor: pointer;
+}
+.footer .footerWrap .friendLink a{
+	cursor: pointer;
+	font-size: 12px;
+	color: #58595b;
+	text-decoration: none;
+	margin:0 10px;
+	padding: 0;
+}
+
+.footer .footerWrap .number{
+	padding-right:459px ;
+	margin-top: 5px;
+}
+.footer .footerWrap .number a{
+	padding: 0 15px 0 0;
+	font-size: 12px;
+	color: #484848;
+	text-decoration: none;
+	cursor: pointer;
+}
+.footer .footerWrap .number a img{
+	width: 15px;
+	margin-right: 5px;
+	border: none;
+	opacity: 1;
+}
+.footer .footerWrap .footerValid{
+	margin-top: 5px;
+	margin-right: 456px;
+}
+.footer .footerWrap .footerValid a{
+	padding: 0 15 0 0;
+	color: #484848;
+	cursor: pointer;
+	text-decoration: none;
+}
+.footer .footerWrap .footerValid a img{
+	width: 83px;
+	height: 30px;
+	vertical-align: top;
+	border: none;
+	opacity: 1;
+}
+.footer .footerWrap a:hover{
+	text-decoration: underline;
+}
+/*回到顶部*/
+.backToTop{
+	display: none;
+	position: fixed;
+	float: left;
+	width: 28px;
+	height: 90px;
+	right: 85px;
+	bottom: 340px;
+	overflow: hidden;
+	background: url(../img/gotop.gif) center bottom no-repeat;
+	cursor: pointer;
+}
