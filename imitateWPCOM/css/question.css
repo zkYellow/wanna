@@ -1,0 +1,310 @@
+.questWrap{
+	min-height: 100%;
+	margin-bottom: 30px;
+	padding-top: 85px;
+}
+@media (max-width: 991px) {
+	.questWrap{
+		min-height: auto;
+	}	
+}
+.questContent{
+	margin-right: 305px;
+	margin-bottom: 0;
+	padding: 0;
+	overflow: hidden;
+}
+@media (max-width: 991px) {
+	.questContent{
+		margin-bottom: 0;
+		margin: 0;
+	}
+}
+.questNav{
+	padding: 10px;
+	background-color: #F3F3F3;
+	border-radius: 3px 3px 0 0;
+}
+.questNav .questNavSingle{
+	margin: 0 15px 0 0;
+	color: #42a7ff;
+}
+.questNav .questCurrent{
+	padding: 3px 4px;
+	color: #FFFFFF;
+	background-color: #42a7ff;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.questNav .questCurrent:hover{
+	background-color: #188FFF;
+}
+.questTopic{
+	line-height: 2em;
+	padding: 0;
+	background-color: #FFFFFF;
+	border-radius: 0 0 3px 3px;
+	overflow: hidden;
+}
+.topicList{
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+.topicList .topicSingle{
+	position: relative;
+	padding: 12px 0 12px 12px;
+	font-size: 14px;
+	padding-right: 12px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #F0F0F0;
+	overflow: hidden;
+}
+.topicList .topicSingle:nth-of-type(1){
+	border-top: 0;
+}
+.topicSingle a{
+	float: left;
+	color: #778087;
+	text-decoration: none;
+}
+.topicSingle img{
+	max-width: 100%;
+	width: 30px;
+	height: 30px;
+	vertical-align: top;
+	border-radius: 3px;
+}
+.replyCount{
+	float: left;
+	display: inline-block;
+	width: 70px;
+	line-height: 30px;
+	text-align: center;
+}
+@media (max-width: 767px) {
+	.replyCount{
+		display: none;
+	}
+}
+.replyCount .quesReply{
+	color: #9e78c0;
+}
+.replyCount .quesSep{
+	margin: 0 -3px;
+	font-size: 10px;
+}
+.replyCount .quesCount{
+	color: #b4b4b4;
+	font-size: 10px;
+}
+.timeGo{
+	float: right;
+	display: inline-block;
+	color: #777777;
+	font-size: 11px;
+	margin-top: 2px;
+	margin-left: 20px;
+}
+.timeGo a{
+	color: #778087;
+	text-decoration: none;
+}
+.timeGo .userImg{
+	width: 18px;
+	height: 18px;
+	margin-right:10px;
+	vertical-align: middle;
+	border-radius: 3px;
+}
+@media (max-width: 767px) {
+	.timeGo .userImg{
+		display: none;
+	}
+}
+.timeGo .timeGoDate{
+	display: inline-block;
+	min-width: 50px;
+	text-align: right;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+.topicContent{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.topicContent .topTopic{
+	padding: 2px 4px;
+	color: #FFFFFF;
+	background-color: #42a7ff;
+	border-radius: 3px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.topicContent .outherTopic{
+	padding: 2px 4px;
+	color: #999999;
+	background-color: #e5e5e5;
+	font-size: 12px;
+	vertical-align: middle;
+	border-radius: 3px;
+}
+.topicContent .topicTitle{
+	display: inline-block;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.topicContent .topicTitle a{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 16px;
+	color: #333333;
+}
+@media (max-width: 1199px) {
+	.topicContent .topicTitle a{
+		max-width: 63%;
+	}
+}
+@media (max-width: 991px) {
+	.topicContent .topicTitle a{
+		max-width: 60%;
+	}
+}
+.topicContent .topicTitle a:hover{
+	color: #42a7ff;
+}
+
+/*分页*/
+.topicPage{
+	margin-top: 10px;
+	padding: 10px;
+	list-style: none;
+	text-align: center;
+}
+.topicPage li{
+	display: inline-block;
+	margin: 0 3px;
+	line-height: 1;
+	color: #999999;
+	background-color: #f2f2f2;
+	box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.05);
+	border-radius: 2px;
+	vertical-align: top;
+	overflow: hidden; 
+}
+.topicPage li .prePage{
+	display: none;
+}
+.topicPage a.active{
+	padding: 7px 10px;
+	color: #FFFFFF;
+	background-color: #42a7ff;
+}
+.topicPage a{
+	display: block;
+	padding: 7px 8px;
+	color: #778087;
+	text-decoration: none;
+	transition: all 200ms ease-in-out;
+}
+.topicPage a:hover{
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #188FFF;
+}
+
+/*侧边栏*/
+.questSide{
+	float: right;
+	width: 280px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.questSide{
+		display: none;
+	}
+}
+.questSide .newQuest .postNew{
+	display: block;
+	padding: 15px 20px;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #42a7ff;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	text-decoration: none;
+}
+.questSide .newQuest .postNew:hover{
+	background-color: #188FFF;
+}
+.postNew .fa{
+	vertical-align: bottom;
+}
+
+.questSide .sideCommon{
+	margin-bottom: 15px;
+}
+.questSide .sideTop a{
+	color: #42a7ff;
+}
+.questSide .sideTop img{
+	max-width: 100%;
+	height: auto;
+}
+.questSide .sideRank{
+	margin-bottom: 20px;
+	padding: 15px;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 1px 0 rgba(0,0,0,0.05);
+}
+.questSide .sideRankTitle{
+	margin: 0;
+	margin-bottom: 5px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #DDDDDD;
+	font-size: 16px;
+}
+.sideRankList{
+	list-style: none;
+	padding: 0;
+	color: #777777;
+}
+.sideRankList li{
+	position: relative;
+	padding: 10px 0;
+	border-bottom: 1px dashed #CCCCCC;
+}
+.sideRankList li .sideRankSingle{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	font-size: 12px;
+	color: #999999;
+	background-color: #EEEEEE;
+	border-radius: 2px;
+	text-align: center;
+}
+.sideRankList li .rankTop{
+	background-color: #F96C6C;
+	color: #FFFFFF;
+}
+.sideRankList li a{
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	top: 10px;
+	left: 0;
+	padding-left: 25px;
+	vertical-align: top;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

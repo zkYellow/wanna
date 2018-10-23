@@ -1,0 +1,308 @@
+/*登录注册部分背景*/
+section{
+	background: url(../img/login-bg.jpg) no-repeat center;
+	background-size: cover;
+}
+.loginBox{
+	padding: 120px 0 60px;
+}
+.loginForm{
+	width: 680px;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,0.95);
+	box-shadow: 0 0 6px 1px rgba(0,0,0,0.15);
+}
+@media (max-width: 767px) {
+	.loginForm{
+		width: 100%;
+	}
+}
+/*注册用户登录*/
+.loginSide{
+	float: left;
+	position: relative;
+	width: 410px;
+	padding: 40px 40px 30px 70px;
+}
+@media (max-width: 767px) {
+	.loginSide{
+		width: 100%;
+		padding: 40px 40px 20px;
+	}
+}
+.loginTitle{
+	line-height: 26px;
+	margin-bottom: 15px;
+}
+.accountLog{
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: normal;
+}
+.loginTitle span{
+	color: #666666;
+}
+.goRegister{
+	float: right;
+}
+.goRegister a{
+	color: #42a7ff;
+}
+.inputForm{
+	position: relative;
+	margin-bottom: 15px;
+}
+.inputForm .fa-envelope,.inputForm .fa-lock,.inputForm .fa-user{
+	position: absolute;
+	left: 3px;
+	line-height: 36px;
+	font-size: 20px;
+	color: #999999;
+}
+.inputForm .accountInput,.inputForm .passInput,
+.inputForm .nicNameInput,.inputForm .passComp{
+	width: 100%;
+	height: 36px;
+	line-height: 32px;
+	margin-bottom: 5px;
+	padding: 2px 15px 2px 35px;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #DDDDDD;
+	outline: none;
+}
+.inputValid{
+	position: relative;
+	margin-bottom: 15px;
+	padding: 5px 0;
+}
+.validContainer{
+	font-size: 12px;
+	touch-action: none;
+	padding: 5px 0;
+}
+.validContainer *{
+	box-sizing: content-box;
+}
+.vaildBox{
+	position: relative;
+	width: auto;
+	height: 34px;
+	background-color: #e8e8e8;
+	margin: 0;
+	padding: 0;
+}
+.vaildBox div{
+	height: auto;
+}
+.validSlide{
+	position: absolute;
+	width: 0;
+	height: 100%;
+	left: 0;
+	background-color: #7ac23c;
+}
+.vaildBox span{
+	position: absolute;
+	width: 40px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #CCCCCC;
+	left: 0;
+	background-color: #FFFFFF;
+	cursor: move;
+	text-align: center;
+	z-index: 2;
+}
+.slideBox{
+	left: 0;
+	font-size: 16px;
+	font-style: normal;
+	color: #737383;
+	background-image: none;
+	-webkit-font-smoothing: antialiased;
+}
+.validText{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 34px;
+	background-color: transparent;
+	color: #9c9c9c;
+	font-size: 12px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 1;
+}
+.validText span{
+	position: absolute;
+	display: inline-block;
+	width: 40px;
+	height: 32px;
+	line-height: 32px;
+	left: 0;
+	border: 1px solid #CCCCCC;
+	background-color:#FFFFFF;
+	text-align: center;
+	z-index: 2;
+}
+/*.slideOrigion{
+	position: static;
+	float: none;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	line-height: 32px;
+	left: 0;
+	border: none;
+	cursor: inherit;
+	z-index: 0;
+}*/
+/*.slideText{
+	float: none;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	background: -webkit-gradient(linear,left top,right top,color-stop(0,#4d4d4d),
+		color-stop(.4,#4d4d4d),color-stop(.5,#fff),color-stop(.6,#4d4d4d),color-stop(1,#4d4d4d));
+		-webkit-text-fill-color: transparent;
+		-webkit-animation: slidetoUnlock 3s infinite;
+}*/
+.checkState{
+	position: relative;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+.checkState .checkSelect{
+	position: absolute;
+	margin-left: 1px;
+}
+.checkState span{
+	margin-left: 20px;
+}
+.checkTerm{
+	color: #42a7ff;
+}
+.checkTerm:hover{
+	color: #42a7ff;
+}
+.loginButton{
+	margin-top: 20px;
+}
+.loginButton .btnLogin{
+	margin: 0;
+	color: #FFFFFF;
+	background-color: #42a7ff;
+	border: 0;
+}
+.loginButton .btnLogin:hover{
+	background-color: #188FFF;
+}
+.forgetPass{
+	margin-top: 10px;
+	padding: 10px;
+	color: #666666;
+	text-align: center;
+}
+.forgetPass a{
+	color: #42a7ff;
+}
+/*第三方登录*/
+.otherSide{
+	float: right;
+	width: 270px;
+	padding: 40px 70px 30px 50px;
+	box-sizing: border-box;
+}
+@media (max-width: 767px) {
+	.otherSide{
+		width: 100%;
+		padding: 0 40px 40px;
+	}
+}
+.otherSide .otherTitle{
+	margin-bottom: 15px;
+	line-height: 26px;
+}
+.formTitle{
+	float: left;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: #333333;
+	line-height: 26px;
+	font-weight: normal;
+}
+.otherSide  .formTitle{
+	float: none;
+}
+@media (max-width: 767px) {
+	.otherSide  .formTitle{
+		text-align: center;
+	}
+}
+.otherList{
+	padding: 0;
+	margin-top: 30px;
+	list-style: none;
+	overflow: hidden;
+}
+.otherList .otherSingle{
+	display: inline-block;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+.otherList .qqWay{
+	background-color: #22a4ff;
+}
+@media (max-width: 767px) {
+	.otherList .qqWay{
+		display: block;
+	}
+}
+.otherList .weibogWay{
+	background-color: #e05244;
+}
+@media (max-width: 767px) {
+	.otherList .weibogWay{
+		display: block;
+	}
+}
+.otherList .wechatWay{
+	background-color: #44b549;
+}
+@media (max-width: 767px) {
+	.otherList .wechatWay{
+		display: block;
+	}
+}
+.otherList .otherSingle a{
+	display: block;
+	width: 150px;
+	padding: 7px 15px;
+	font-size: 14px;
+	color: #FFFFFF;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: none;
+	opacity: 0.9;
+}
+@media (max-width: 767px) {
+	.otherList .otherSingle a{
+		width: 100%;
+		padding: 10px;
+	}
+}
+.otherList .otherSingle:hover a{
+	opacity: 1;
+}
+.otherList .otherSingle .fa{
+	font-size: 18px;
+	vertical-align: bottom;
+}

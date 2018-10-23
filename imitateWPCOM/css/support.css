@@ -1,0 +1,206 @@
+/*搜索部分*/
+.searchWrap{
+	position: relative;
+	margin-top: 60px;
+	padding: 80px 0 100px;
+	color: #FFFFFF;
+	background-color: #42a7ff;
+	background-image: linear-gradient(90deg,#9c4dff 0%,#42a7ff 100%);
+}
+/*屏幕尺寸小于767px时隐藏*/
+@media (max-width: 767px) {
+	.searchWrap{
+		margin-top: 50px;
+		padding: 50px 0 60px;
+	}
+}
+/*粒子效果背景图*/
+.particleBg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	z-index: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.particleBg{
+		height: 500px;
+	}
+}
+.particleBg canvas{
+	background-color: transparent;
+}
+
+.searchBox{
+	position: relative;
+}
+.searchBox .supportTitle{
+	margin: 0;
+	padding-bottom: 50px;
+	text-align: center;
+	
+}
+.searchForm{
+	position: relative;
+	text-align: center;
+	font-size: 0;
+}
+@media (max-width: 767px) {
+	.searchForm{
+		border-radius: 3px;
+		overflow: hidden;
+		box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);
+	}
+}
+.searchInput{
+	display: inline-block;
+	width: 480px;
+	height: 42px;
+	line-height: 32px;
+	padding: 5px 15px;
+	font-size: 14px;
+	color: #666666;
+	background-color: #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);
+	-webkit-appearance: none;
+}
+@media (max-width: 767px) {
+	.searchInput{
+		width: 100%;
+		padding-right: 87px;
+		box-shadow: none;
+		border-radius: 0;
+	}
+}
+.searchBtn{
+	display: inline-block;
+	height: 42px;
+	line-height: 42px;
+	padding: 0 20px;
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: #38b48b;
+	border: 0;
+	border-radius: 0;
+	outline: 0;
+	vertical-align: top;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	box-shadow: 0 0 3px 1px rgba(200,200,200,0.03);
+}
+@media (max-width: 767px) {
+	.searchBtn{
+		position: absolute;
+		right: 0;
+		top: 0;
+		box-shadow: none;
+		border-radius: 0;
+	}
+}
+.searchBtn:hover{
+	background-color: #218868;
+}
+.supportContent{
+	margin: 0 -30px;
+	padding: 50px 0;
+	transition: all 0.4s ease-out 0s;
+}
+@media (max-width: 767px) {
+	.supportContent{
+		margin: 0;
+	}
+}
+.supportSingle{
+	margin-bottom: 50px;
+	padding: 0 30px;
+	transition: all 0.4s ease-out 0s;
+}
+@media (max-width: 767px) {
+	.supportSingle{
+		padding: 0;
+	}
+}
+.supportBox{
+	position: relative;
+	margin-top: 40px;
+	padding: 40px 30px 30px;
+	border: 1px solid #CCCCCC;
+	transition: all 0.4s ease-out 0s;
+}
+.supportBox:hover .fa{
+	color: #FFFFFF;
+	background-color: #42a7ff;
+	box-shadow: 0 0 0 7px #fafafa,0 0 0 8px #E5E5E5;
+	transition: all 0.5s ease-out 0s;
+}
+.supportTitle{
+	margin: 15px 0;
+	padding: 0;
+	line-height: 30px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 400;
+	transition: all 0.4s ease-out 0s;
+}
+.supportTitle a{
+	color: #000000;
+	text-decoration: none;
+}
+.supportTitle .fa{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	margin: 0 auto;
+	top: -40px;
+	font-size: 40px;
+	color: #42a7ff;
+	background-color: #F9F9F9;
+	border-radius: 50%;
+	vertical-align: top;
+	transition: all 0.4s ease-out 0s;
+}
+
+.supportList{
+	padding-left: 18px;
+	color: #999999;
+	list-style-position: outside;	
+}
+.supportList:last-child{
+	padding: 0;
+	list-style: none;
+	color: #333333;
+	text-align: center;
+}
+.supportList li{
+	padding: 15px 0;
+	border-bottom: 1px solid #DDDDDD;
+}
+.supportList a{
+	display: inline-block;
+	max-width: 100%;
+	color: #42a7ff;
+	
+	vertical-align: top;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+		<title>注册_WPCOM</title>
+		<link rel="shortcut icon" href="../img/favicon.ico"/>
+		<link rel="bookmark" href="../img/favicon.ico"/>
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/font-awesome.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/loginRegister.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<header class="header">
+			<div class="container clearfix">
+				<div class="centerNav">
+					<h1 class="logo">
+						<a href="../index.html">
+							<img src="../img/logo.png" alt="WPCOM WordPress主题"/>
+						</a>
+					</h1>
+					<div class="menuToggle">
+						<span class="icon-bar icon-barOne"></span>
+						<span class="icon-bar icon-barTwo"></span>
+						<span class="icon-bar icon-barThree"></span>
+					</div>
+				</div>
+				<div class="leftNav">
+					<ul class="navMenu">
+						<li class="active">
+							<a href="../index.html">首页</a>
+						</li>
+						<li class="dropdown">
+							<a href="theme.html" target="_top">WordPress主题 <i class="fa fa-angle-down"></i></a>
+							<ul class="menuList">
+								<li>
+									<a href="#" target="_top">Sage</a>
+								</li>
+								<li>
+									<a href="#" target="_top">JustMedia</a>
+								</li>
+								<li>
+									<a href="#" target="_top">JustNews</a>
+								</li>
+								<li>
+									<a href="#" target="_top">Module</a>
+								</li>
+								<li>
+									<a href="#" target="_top">Third</a>
+								</li>
+								<li>
+									<a href="#" target="_top">Vitality</a>
+								</li>
+								<li>
+									<a href="#" target="_top">TheSimple</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="plugin.html">WordPress插件 <i class="fa fa-angle-down"></i></a>
+							<ul class="menuList">
+								<li>
+									<a href="#" target="_top">QAPress</a>
+								</li>
+								<li>
+									<a href="#" target="_top">Woo PayGate</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="news.html">最新动态</a>
+						</li>
+						<li class="dropdown">
+							<a href="support.html">帮助支持 <i class="fa fa-angle-down"></i></a>
+							<ul class="menuList">
+								<li>
+									<a href="#" target="_top">使用文档</a>
+								</li>
+								<li>
+									<a href="#" target="_top">常见问题</a>
+								</li>
+								<li>
+									<a href="#" target="_top">建站教程</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="question.html">问答社区</a>
+						</li>
+					</ul>
+					<div class="userLogReg">
+						<a class="btn btnLogin" href="login.html">登录</a>
+						<a class="btn btnRegister" href="register.html">注册</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--头部end-->
+		<!--注册部分-->
+		<section>
+			<div class="container">
+				<div class="loginBox">
+					<div class="loginForm clearfix">
+						<div class="loginSide">
+							<div class="loginTitle clearfix">
+								<h3 class="accountLog">帐号注册</h3>
+								<span class="goRegister">
+									已经有帐号？
+									<a href="login.html" target="_top">马上登录</a>
+								</span>
+							</div>
+							<form id="logForm" method="post">
+								<div class="inputForm">
+									<i class="fa fa-envelope"></i>
+									<input type="text" class="accountInput userInput" placeholder="请输入邮箱"/>
+								</div>
+								<div class="inputForm">
+									<i class="fa fa-user"></i>
+									<input type="text" class="nicNameInput userInput" placeholder="请输入昵称"/>
+								</div>
+								<div class="inputForm">
+									<i class="fa fa-lock"></i>
+									<input type="password" class="passInput userInput" placeholder="请输入密码"/>
+								</div>
+								<div class="inputForm">
+									<i class="fa fa-lock"></i>
+									<input type="password" class="passComp userInput" placeholder="请确认密码"/>
+								</div>
+								<div class="inputValid">
+									<div class="validContainer">
+										<div style="width: width: 100%;">
+											<div class="vaildBox">
+												<div class="validSlide"></div>
+												<span class="slideBox">&gt;&gt;</span>
+												<div class="validText">
+													请按住滑块，拖动到最右边
+													<!--<span class="slideOrigion slideText">请按住滑块，拖动到最右边</span>-->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="checkState">
+									<input type="checkbox" class="checkSelect"/>
+									<span>我已仔细阅读并接受</span>
+									<a href="#" target="_top" class="checkTerm">WPCOM服务条款</a>
+								</div>
+								<div class="loginButton">
+									<input class="btn btnLogin btn-block btn-lg" value="提交注册"/>
+								</div>
+							</form>
+						</div>
+						<div class="otherSide">
+							<div class="otherTitle clearfix">
+								<h3 class="formTitle">也可使用以下帐号<br />简单注册快人一步</h3>
+							</div>
+							<ul class="otherList">
+								<li class="otherSingle qqWay">
+									<a href="#" target="_top">
+										<i class="fa fa-qq"></i>
+										 QQ帐号登录
+									</a>
+								</li>
+								<li class="otherSingle weibogWay">
+									<a href="#" target="_top">
+										<i class="fa fa-weibo"></i>
+										  微博帐号登录
+									</a>
+								</li>
+								<li class="otherSingle wechatWay">
+									<a href="#" target="_top">
+										<i class="fa fa-wechat"></i>
+										  微信帐号登录
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--注册部分end-->
+		<!--底部-->
+		<footer>
+			<div class="container">
+				<ul class="footerContent hidden-xs row">
+					<li class="col-sm-2">
+						<h3 class="footerTitle">关于</h3>
+						<ul class="aboutList">
+							<li><a href="#" target="_top">关于我们</a></li>
+							<li><a href="#" target="_top">联系我们</a></li>
+							<li><a href="#" target="_top">服务条款</a></li>
+							<li><a href="#" target="_top">推介计划</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-2">
+						<h3 class="footerTitle">支持</h3>
+						<ul class="aboutList">
+							<li><a href="#" target="_top">主题文档</a></li>
+							<li><a href="#" target="_top">常见问题</a></li>
+							<li><a href="#" target="_top">提交服务单</a></li>
+							<li><a href="#" target="_top">申请发票</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-2">
+						<h3 class="footerTitle">文档</h3>
+						<ul class="aboutList">
+							<li><a href="#" target="_top">在线文档</a></li>
+							<li><a href="#" target="_top">Themer框架</a></li>
+							<li><a href="#" target="_top">授权激活</a></li>
+							<li><a href="#" target="_top">导入数据</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-2">
+						<h3 class="footerTitle">更多</h3>
+						<ul class="aboutList">
+							<li><a href="#" target="_top">爱主题</a></li>
+						</ul>
+					</li>
+					<li class="footerContact col-md-3 col-md-offset-1 col-sm-4 col-lg-3 col-lg-offset-1">
+						<p>
+							在线客服：
+							<a href="#" target="_top" class="contactWay">
+								<span class="fa fa-qq"></span>QQ交谈
+							</a>
+						</p>
+						<p>电子邮箱：service(a)izt.me</p>
+						<p>QQ客户群：<a href="#" target="_top">430156021</a></p>
+						<p>工作时间：周一至周五 <br/>
+							9:30-18:30，节假日休息
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="footerCopyRight container clearfix">
+				<p>© 2015-2018 WPCOM.CN 版权所有  WPCOM - 更专业的
+					<a href="#">WordPress主题</a>、
+					<a href="#">WordPress模板</a>、
+					<a href="#">WordPress企业主题</a>服务
+				</p>
+				<p class="footerBottom">
+					<a href="#" target="_top">粤ICP备16083848号-1</a>
+					<a href="#" target="_top">
+						<img src="../img/gongan.png" alt="公安备案" />
+						 粤公网安备 44010502000379号
+					</a>
+				</p>
+			</div>
+		</footer>
+		<!--底部end-->
+		
+		<script type="text/javascript" src="../bootstrap/js/jquery-3.3.1.js" ></script>
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<!--<script type="text/javascript" src="../js/index.js" ></script>-->
+		<script>
+			//输入账号和密码
+			$('.userInput').click(function(){
+				$(this).css('border-bottom-color','#42a7ff');
+				$(this).siblings('i').css('color','#42a7ff');
+			})
+			$('.userInput').blur(function(){
+				$(this).css('border-bottom-color','#DDDDDD');
+				$(this).siblings('i').css('color','#999999');
+			})
+		</script>
+	</body>
+</html>

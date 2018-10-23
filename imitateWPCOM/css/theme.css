@@ -1,0 +1,229 @@
+/*主题内容*/
+.themeWrap{
+	min-height: 100%;
+	padding-top: 60px;
+}
+@media (max-width: 991px) {
+	.themeWrap{
+		padding-top: 50px;
+	}
+}
+.themeList{
+	list-style: none;
+	padding: 0;
+	margin: 30px 0 60px;
+}
+.themeSingle{
+	height: 360px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF;
+	border: 1px solid #EEEEEE;
+	overflow: hidden;
+}
+.themeSingle:hover{
+	border-color: #22A4FF;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.themeSingle{
+		height: 325px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.themeSingle{
+		height: 248px;
+	}
+}
+@media (max-width: 767px) {
+	.themeSingle{
+		height: auto;
+	}
+}
+.themeSingle .leftImg{
+	float: left !important;
+	width: 58%;
+}
+@media (max-width: 767px) {
+	.themeSingle .leftImg{
+		float: none !important;
+		width: 100%;
+	}
+}
+.leftImg a{
+	color: #42a7ff;
+}
+.leftImg img{
+	width: 100%;
+	height: auto;
+}
+.rightDes{
+	float: right;
+	width: 42%;
+	height: 358px;
+	padding: 0 20px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.rightDes{
+		height: 246px;
+	}
+}
+@media (max-width: 767px) {
+	.rightDes{
+		float: none !important;
+		width: 100%;
+		height: auto;
+	}
+}
+.desTitle{
+	margin: 0;
+	padding: 21px 0;
+	line-height: 26px;
+	font-size: 18px;
+	border-bottom: 1px dotted #DDDDDD;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.desTitle{
+		padding: 15px 0;
+		font-size: 16px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.desTitle{
+		padding: 15px 0;
+		font-size: 16px;
+		border-bottom: 0;
+	}
+}
+
+.desTitle a{
+	color: #333333;
+	text-decoration: none;
+}
+.desTitle a:hover{
+	color: #22A4FF;
+}
+.desContent{
+	margin: 15px 0 30px ;
+	font-size: 14px;
+	color: #666666;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.desContent{
+		margin: 15px 0;
+		line-height: 22px;
+		font-size: 13px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.desContent{
+		display: none;
+	}
+}
+
+.desPreview{
+	position: relative;
+	height: 60px;
+	margin: 0 -20px 30px -25px;
+	color: #FFFFFF;
+	background-color: #42a7ff;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.desPreview{
+		height: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.desPreview{
+		height: 50px;
+		font-size: 16px;
+	}
+}
+.desPreview::before{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	left: -60px;
+	top: 0;	
+	margin: 0;
+	padding: 0;
+	border: 30px solid transparent;
+	border-right-color: #42a7ff;
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+	.desPreview::before{
+		left: -50px;
+		border: 25px solid transparent;
+		border-right-color: #42a7ff;
+	}
+}
+
+.desPreview div:not(:first-child):hover{
+	background-color: #188FFF;
+}
+.desPreview a{
+	display: block;
+	line-height: 30px;
+	padding: 15px 0;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.viewPrice{
+	line-height: 60px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.viewPrice{
+		line-height: 50px;
+	}
+}
+.viewPrice span:first-child{
+	font-size: 18px;
+	font-style: normal;
+}
+.viewPrice span:last-child{
+	font-size: 24px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.viewPrice span:last-child{
+		font-size: 18px;
+	}
+}
+
+.desPreview a{
+	display: block;
+	padding: 15px 0;
+	line-height: 30px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.desPreview a{
+		padding: 10px 0;
+	}
+}
+
+.desPrice{
+	padding: 10px 0;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+}
+@media (max-width: 767px) {
+	.desPrice{
+		margin-bottom: 10px;
+	}
+}
+.desPrice p{
+	margin-bottom: 0;
+}
+.desPrice .priceTitle{
+	color: #999999;
+}
+.desPrice .priceInfo{
+	font-size: 14px;
+	color: #f61d4b;
+}
+.desPrice .originPrice{
+	color: #666666;
+}
